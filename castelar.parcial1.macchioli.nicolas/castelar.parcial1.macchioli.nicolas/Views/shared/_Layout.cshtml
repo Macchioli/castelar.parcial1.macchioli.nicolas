@@ -1,14 +1,37 @@
 ﻿<!DOCTYPE html>
-
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - UAI</title>
+
 </head>
 <body>
-    <h1>Comun</h1>
-    <div>
-        @RenderBody()
+    <div id="container">
+        <!-- Encabezado -->
+        <header>
+            <h1>¿Hay vida en otros planetas? - Sistemas Solares</h1>
+        </header>
+        <!-- Contenido -->
+        <section>
+            <article>
+                @RenderBody()
+            </article>
+        </section>
+
+        <!-- Contenido relacionado-->
+        <aside id="pub">
+        <article>
+            <div>
+                <a href="/">Contenido relacionado</a>
+            </div>
+        </article>
+        </aside> 
+        <!-- Pie de pagina -->
+        <footer>
+            <p>¿Hay vida en otros planetas? - @DateTime.Now.Year</p>
+        </footer>
     </div>
+
 </body>
 </html>
