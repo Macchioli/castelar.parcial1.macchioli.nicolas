@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - UAI</title>
+    <title>@ViewBag.Title - Constelaciones</title>
     <!-- CSS -->
     <link href="~/Content/style.css" rel="stylesheet" type="text/css" />
 </head>
@@ -22,17 +22,19 @@
 
         <!-- Contenido relacionado-->
         <aside>
-        <article>
-            <div>
-                <a>Contenido relacionado</a>
-            </div>
-        </article>
-        </aside> 
+            <article>
+                <div>
+                    <a href="/">Contenido relacionado</a>                               <br /><br /><br /><br />
+                    <a href="/home/Cosmo">Cosmo</a>
+                </div>
+            </article>
+        </aside>
         <!-- Pie de pagina -->
         <footer>
             <p>¿Hay vida en otros planetas? - @DateTime.Now.Year</p>
         </footer>
     </div>
+    @RenderSection("scripts", required: false)
 
 </body>
 </html>
